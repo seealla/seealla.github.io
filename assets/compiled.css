@@ -2297,6 +2297,12 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+  border: 0;
+  outline: none;
+}
+
 /* lightbox */
 .mfp-img {
   z-index:20;
