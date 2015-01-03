@@ -5,69 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Seealla</title>
-    <link rel='stylesheet' href='assets/_seealla.css?v=1' type='text/css' media='all' />
-    <style>
-      body{font-size:14px;}
-      .logo-alt {
-        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-        font-size: 15pt;
-      }
-    </style>
-    <script>window.seeallartl = false;</script>
-    <script>window.seeallaUseAjax = true;</script>
-    <script>window.seeallaAccentColor = '#dc971f';</script>
-    <style type="text/css" id="seealla-custom-styles"></style>
-    <!--[if IE 8]><link rel="stylesheet" type="text/css" href="assets/vc-ie8.css" media="screen"><![endif]-->
+    <link rel="stylesheet" type="text/css" href="assets/compiled.css" media="screen">
   </head>
-  <body class="home page page-template page-template-template-dark-full-php _masterslider _msp_version_2.7.2 dark-sidebar wpb-js-composer js-comp-ver-4.3.4 vc_responsive">
+  <body>
     <script type="text/template" id="image-template">
-      <div class="gp-item tj-hover-5 reverse">
-        <a href="{{original_link}}"  class="lightbox-gallery-item">
-          <img src="{{thumbnail_link}}" class="img-responsive" data-width=800 data-height={{is_portrait}}>
-          <!-- Item Overlay -->
-          <div class="tj-overlay"></div>
-          <!-- /Item Overlay -->
+      <div class="gallery-item">
+        <a href="{{original_link}}" class="lightbox-gallery-item">
+          <img src="{{thumbnail_link}}" class="img-responsive">
         </a>
       </div>
     </script>
 
-    <!-- inner bar wrapper -->
-    <div id="inner-bar">
-      <div class="logo-alt">
+    <!-- side bar -->
+    <div id="side-bar">
+      <div class="logo">
         <img src="assets/seealla-rotated.png" />
-      </div><!-- /Small logo -->
+      </div>
     </div>
     <div id="top-bar">
-      <div class="logo-alt">
+      <div class="logo">
         <img src="assets/seealla.png" />
       </div>
     </div>
-    <!-- /inner bar wrapper -->
+    <!-- /side bar -->
 
-    <!--Page main wrapper-->
-    <div id="main-content" class="dark-template remove-vc-spacing"><div class="page-wrapper"><div class="seealla-vc-row-wrapper"><div class="vc_row wpb_row vc_row-fluid"><div class="seealla-inner tj-fullwidth"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="wpb_wrapper"><div class="page-main no-side">
+    <div id="main-content">
+      <div id="gallery"></div>
+    </div>
 
-      <!-- Gallery wrapper -->
-      <div id="gallery" class="grid-portfolio tj-lightbox-gallery same-ratio-items no-padding" lg-cols="4" md-cols="4" sm-cols="3" xs-cols="1">
-
-      </div>
-      <!-- /Gallery wrapper -->
-
-      <!--<a id="social-sharing-trigger" href="#"><i class="fa fa-share-alt"></i></a><div id="social-sharing"><a class="share-close"><i class="fa fa-close"></i></a><div class="vcenter-wrapper"><div class="vcenter"><div class="sharing-icon"><i class="fa fa-share-alt"></i></div><ul><li><a class="sharing-link share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={url}&t={title}" target="_blank">Facebook</a></li><li><a class="sharing-link share-twitter" href="https://twitter.com/share?url={url}" target="_blank">twitter</a></li><li><a class="sharing-link share-google-plus" href="https://plus.google.com/share?url={url}" target="_blank">google</a></li><li><a class="sharing-link share-pinterest" href="https://pinterest.com/pin/create/bookmarklet/?media={img}&url={url}" target="_blank">pinterest</a></li></ul></div></div></div>-->
-
-    </div></div></div></div></div></div></div></div>
-    <!--/Page main wrapper-->
-    <script type="text/javascript" src="assets/_seealla.js?v=1"></script>
-    <script type="text/javascript">
-      var seealla_template = jQuery('#image-template').html();
-      var seealla_gallery = jQuery('#gallery');
-      function seealla_photo(original, thumbnail, is_portrait) {
-        var new_html = seealla_template.replace('{{original_link}}', original).replace('{{thumbnail_link}}', thumbnail).replace('{{is_portrait}}', is_portrait? '1000' : '500');
-        seealla_gallery.append(jQuery(new_html));
-      }
-    </script>
+    <script type="text/javascript" src="assets/lib.js"></script>
+    <script type="text/javascript" src="assets/main.js"></script>
     <script type="text/javascript" src="image_list.js"></script>
-    <script>
+    
+    <!--<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -86,6 +56,6 @@
         s.src = '//static.getclicky.com/js';
         ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
       })();
-    </script>
+    </script>-->
   </body>
 </html>
