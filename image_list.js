@@ -1,3 +1,6 @@
+seealla_photo('images/IMG_9842.jpg', 'thumbnails/IMG_9842.jpg')
+seealla_photo('images/IMG_3571.JPG', 'thumbnails/IMG_3571.JPG')
+seealla_photo('images/IMG_5933.JPG', 'thumbnails/IMG_5933.JPG')
 seealla_photo('images/IMG_20150227_084855.jpg', 'thumbnails/IMG_20150227_084855.jpg');
 seealla_photo('images/IMG_5592.jpg', 'thumbnails/IMG_5592.jpg');
 seealla_photo('images/_MG_8892.JPG', 'thumbnails/_MG_8892.JPG');
